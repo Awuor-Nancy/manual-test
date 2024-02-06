@@ -1,4 +1,4 @@
-# write a program tat adds two numbers and retuns the result.
+# write a program that adds two numbers and retuns the result.
 def add_two_numbers(num1, num2):
     return num1 + num2
 
