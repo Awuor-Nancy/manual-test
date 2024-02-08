@@ -6,12 +6,9 @@ def factorial(n):
     # Returns
     # The factorial of n
 
-    if n == 0:
-        return 1
-    else:
-        return n * (n-1)
-
-
-number = 25
-result = factorial(number)
-print(f"Factorial of {number} is {result}")
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
